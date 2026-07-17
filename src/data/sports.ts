@@ -11,6 +11,7 @@ export interface SportDetail {
   };
   equipment: string[];
   etiquette: string;
+  faqs: { question: string; answer: string }[];
 }
 
 const generateDefaultSport = (name: string, slug: string): SportDetail => ({
@@ -37,7 +38,11 @@ const generateDefaultSport = (name: string, slug: string): SportDetail => ({
     "Apparel constructed from premium, traditional materials designed for both performance and elegance.",
     "Specialized footwear and safety gear appropriate to the demands of the sport."
   ],
-  etiquette: "The highest standards of sportsmanship are expected at all times. This includes unwavering respect for opponents, officials, and the grounds. Unseemly displays of emotion or unsportsmanlike conduct are strictly forbidden."
+  etiquette: "The highest standards of sportsmanship are expected at all times. This includes unwavering respect for opponents, officials, and the grounds. Unseemly displays of emotion or unsportsmanlike conduct are strictly forbidden.",
+  faqs: [
+    { question: `What is the standard dress code for ${name}?`, answer: `The dress code reflects the heritage of ${name}, requiring traditional, elegant sporting attire.` },
+    { question: `Do I need to own my own equipment?`, answer: `While the Club provides standard equipment, most distinguished players prefer to commission bespoke gear tailored to their exact specifications.` }
+  ]
 });
 
 export const sportsData: Record<string, SportDetail> = {
@@ -66,7 +71,11 @@ export const sportsData: Record<string, SportDetail> = {
       "Spiked or spikeless leather golf shoes for stability.",
       "A tailored glove, typically made of Cabretta leather, for grip."
     ],
-    etiquette: "Golf relies heavily on the honor system. Players must remain completely silent while others are hitting, repair their divots on the fairway and pitch marks on the green, and maintain a brisk pace of play. Dress codes typically require collared shirts and tailored trousers."
+    etiquette: "Golf relies heavily on the honor system. Players must remain completely silent while others are hitting, repair their divots on the fairway and pitch marks on the green, and maintain a brisk pace of play. Dress codes typically require collared shirts and tailored trousers.",
+    faqs: [
+      { question: "What is the handicap limit to play at the Royal Estate?", answer: "To maintain the pace and quality of play, guests must possess a certified handicap of 18 or lower." },
+      { question: "Are caddies mandatory?", answer: "Yes, all groups must be accompanied by one of our professional caddies who are experts in reading our greens." }
+    ]
   },
   "polo": {
     slug: "polo",
@@ -93,7 +102,11 @@ export const sportsData: Record<string, SportDetail> = {
       "A reinforced helmet, often with a face guard.",
       "Knee guards and specialized leather riding boots."
     ],
-    etiquette: "Polo maintains a highly social and aristocratic culture. The tradition of 'divot stomping' during halftime invites spectators onto the field to replace torn turf while socializing. Elegance in dress is expected from spectators, often featuring summer suits, sundresses, and extravagant hats."
+    etiquette: "Polo maintains a highly social and aristocratic culture. The tradition of 'divot stomping' during halftime invites spectators onto the field to replace torn turf while socializing. Elegance in dress is expected from spectators, often featuring summer suits, sundresses, and extravagant hats.",
+    faqs: [
+      { question: "Do I need to provide my own Polo ponies?", answer: "Members may board their string in our elite stables, or lease world-class ponies directly from the Club's equestrian center." },
+      { question: "What is 'divot stomping'?", answer: "A traditional halftime activity where spectators are invited onto the field to press down the turf torn up by the horses' hooves, accompanied by champagne." }
+    ]
   },
   "lawn-tennis": {
     slug: "lawn-tennis",
@@ -120,7 +133,11 @@ export const sportsData: Record<string, SportDetail> = {
       "Specialized grass-court tennis shoes with dimpled soles to prevent slipping without tearing the turf.",
       "Traditional all-white athletic apparel (strictly enforced at venues like Wimbledon)."
     ],
-    etiquette: "Silence is strictly mandated during points. Players are expected to respect the umpire's decisions without outburst. At exclusive clubs, the 'all-white' clothing rule is not merely a suggestion, but a requirement representing the purity and tradition of the sport."
+    etiquette: "Silence is strictly mandated during points. Players are expected to respect the umpire's decisions without outburst. At exclusive clubs, the 'all-white' clothing rule is not merely a suggestion, but a requirement representing the purity and tradition of the sport.",
+    faqs: [
+      { question: "How strict is the all-white clothing rule?", answer: "Absolutely uncompromising. Even slight off-white or cream colors, as well as colored trims exceeding 1 centimeter, are prohibited on our grass courts." },
+      { question: "Can we play on grass year-round?", answer: "Our pristine grass courts are exclusively open during the summer season to preserve their immaculate condition." }
+    ]
   },
   "fencing": {
     slug: "fencing",
@@ -147,7 +164,11 @@ export const sportsData: Record<string, SportDetail> = {
       "A lamé (electrically conductive over-jacket) for foil and sabre.",
       "A specialized padded glove for the weapon hand."
     ],
-    etiquette: "Fencing is steeped in chivalry. Fencers must salute their opponent, the referee, and the audience with their weapon before putting on their masks. After the final touch, fencers must remove their masks, salute again, and shake hands with their non-weapon hand."
+    etiquette: "Fencing is steeped in chivalry. Fencers must salute their opponent, the referee, and the audience with their weapon before putting on their masks. After the final touch, fencers must remove their masks, salute again, and shake hands with their non-weapon hand.",
+    faqs: [
+      { question: "Is fencing dangerous?", answer: "Modern fencing is incredibly safe. The weapons are blunted and flexible, and our kevlar-reinforced protective gear prevents injury." },
+      { question: "Do you offer classical fencing or Olympic sport fencing?", answer: "The Club teaches both the classical traditions of the duel and modern, electronically scored Olympic sport fencing." }
+    ]
   },
   "sailing": {
     slug: "sailing",
@@ -174,7 +195,11 @@ export const sportsData: Record<string, SportDetail> = {
       "Technical offshore foul-weather gear and specialized deck shoes.",
       "Sophisticated navigational and wind-measuring instruments."
     ],
-    etiquette: "Maritime tradition dictates strict respect for the 'Captain' whose word is absolute law on board. In yacht clubs, a high standard of dress (often navy blazers and white trousers) is expected. Good seamanship requires always offering assistance to any vessel in distress, regardless of the race."
+    etiquette: "Maritime tradition dictates strict respect for the 'Captain' whose word is absolute law on board. In yacht clubs, a high standard of dress (often navy blazers and white trousers) is expected. Good seamanship requires always offering assistance to any vessel in distress, regardless of the race.",
+    faqs: [
+      { question: "Can I moor my yacht at the Club?", answer: "The Club maintains a private deep-water marina exclusively for members' vessels, subject to slip availability." },
+      { question: "Do you offer sailing lessons?", answer: "Yes, our Master Mariners provide private instruction ranging from basic sailing to offshore racing tactics." }
+    ]
   }
 };
 

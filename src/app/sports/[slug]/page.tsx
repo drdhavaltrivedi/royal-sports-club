@@ -4,6 +4,8 @@ import { ArrowLeft, Check } from "lucide-react";
 import { notFound } from "next/navigation";
 import { sportsData } from "@/data/sports";
 import type { Metadata } from 'next';
+import Breadcrumb from "@/components/ui/Breadcrumb";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -66,6 +68,12 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           
+          <Breadcrumb items={[
+            { label: 'Home', href: '/' },
+            { label: 'Sports', href: '/sports' },
+            { label: sport.name, href: `/sports/${sport.slug}` }
+          ]} />
+
           {/* Introduction */}
           <div>
             <p className="font-sans text-2xl text-luxury-primary leading-relaxed text-center font-medium">
@@ -136,12 +144,20 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
           </div>
 
           {/* Etiquette */}
-          <div className="text-center border-t border-b border-luxury-border/30 py-16">
+          <div className="text-center border-t border-luxury-border/30 pt-16">
             <h2 className="font-serif text-3xl text-luxury-primary mb-6">The Mark of Prestige: Etiquette</h2>
             <p className="font-sans text-lg text-luxury-text/80 leading-relaxed max-w-3xl mx-auto">
               {sport.etiquette}
             </p>
           </div>
+
+          {/* FAQs */}
+          {sport.faqs && sport.faqs.length > 0 && (
+            <div className="border-t border-luxury-border/30 pt-16">
+              <h2 className="font-serif text-3xl text-luxury-primary mb-12 text-center">Frequently Asked Questions</h2>
+              <FaqAccordion items={sport.faqs} />
+            </div>
+          )}
 
         </div>
       </section>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 // Mock data for the magazine articles
 const getArticleData = (slug: string) => {
@@ -60,10 +61,11 @@ export default async function MagazineArticle({ params }: { params: Promise<{ sl
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Navigation & Meta */}
         <div className="mb-12">
-          <Link href="/" className="inline-flex items-center text-luxury-accent hover:text-luxury-primary transition-colors mb-8 uppercase tracking-widest text-sm font-medium">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Link>
+          <Breadcrumb items={[
+            { label: 'Home', href: '/' },
+            { label: 'Magazine', href: '/magazine' },
+            { label: article.category, href: `/magazine` }
+          ]} />
           
           <div className="flex items-center space-x-4 mb-6">
             <span className="text-luxury-accent uppercase tracking-widest text-sm font-medium">{article.category}</span>
