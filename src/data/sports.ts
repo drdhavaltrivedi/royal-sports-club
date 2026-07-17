@@ -17,7 +17,7 @@ export interface SportDetail {
 const generateDefaultSport = (name: string, slug: string): SportDetail => ({
   slug,
   name,
-  heroImage: "/images/hero-bg.png",
+  heroImage: `/images/${slug}.png`,
   quote: `"${name} represents the pinnacle of tradition, discipline, and aristocratic excellence."`,
   intro: `The distinguished sport of ${name} combines precision, strategy, and centuries of tradition.`,
   history: [
@@ -142,7 +142,7 @@ export const sportsData: Record<string, SportDetail> = {
   "fencing": {
     slug: "fencing",
     name: "Fencing",
-    heroImage: "/images/hero-bg.png",
+    heroImage: "/images/fencing.png",
     quote: "\"Fencing is a game of physical chess, requiring the grace of a dancer and the mind of a tactician.\"",
     intro: "The modern evolution of aristocratic dueling, fencing is an elegant, lightning-fast combat sport.",
     history: [
@@ -173,7 +173,7 @@ export const sportsData: Record<string, SportDetail> = {
   "sailing": {
     slug: "sailing",
     name: "Sailing",
-    heroImage: "/images/hero-bg.png",
+    heroImage: "/images/sailing.png",
     quote: "\"The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails.\"",
     intro: "A harmonious yet demanding battle with the elements, requiring unparalleled navigational skill and teamwork.",
     history: [
