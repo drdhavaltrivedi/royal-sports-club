@@ -3,6 +3,13 @@ import Image from "next/image";
 
 const ARTICLES = [
   {
+    slug: "economics-of-elite-equestrian",
+    category: "Lifestyle",
+    title: "The Economics of Elite Equestrian: Why a Dressage Horse Costs More Than a Hypercar",
+    desc: "A deep dive into the hidden world of Olympic Dressage, royal breeding programs, and living investments.",
+    image: "/images/horse-racing.png"
+  },
+  {
     slug: "architectural-genius-st-andrews",
     category: "Heritage",
     title: "The Architectural Genius of St Andrews: A Study in Strategic Patience",

@@ -7,6 +7,18 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 // Mock data for the magazine articles
 const getArticleData = (slug: string) => {
   const articles: Record<string, any> = {
+    "economics-of-elite-equestrian": {
+      title: "The Economics of Elite Equestrian: Why a Dressage Horse Costs More Than a Hypercar",
+      category: "Lifestyle",
+      author: "Edward Harrington",
+      date: "October 14, 2026",
+      image: "/images/horse-racing.png",
+      content: [
+        "In the rarefied world of ultra-high-net-worth investments, hypercars depreciate and real estate fluctuates. But a masterfully bred Olympic dressage horse is a living, breathing asset class of its own.",
+        "A deep dive into the hidden world of elite equestrian sports reveals a shadowy economy driven by European royalty, Middle Eastern Sheikhs, and Silicon Valley billionaires. These patrons routinely spend upwards of $10 to $15 million for a single Grand Prix dressage horse. The value is not merely in the animal's athletic capability, but in its bloodline—a carefully curated genetic masterpiece decades in the making.",
+        "Owning such an animal is the ultimate status symbol. It requires maintaining a sprawling elite equestrian estate, employing world-class riders and veterinarians, and participating in an exclusive global circuit. For the wealthy, these magnificent creatures are not just pets or competitors; they are the most prestigious living investments on earth."
+      ]
+    },
     "architectural-genius-st-andrews": {
       title: "The Architectural Genius of St Andrews: A Study in Strategic Patience",
       category: "Heritage",
