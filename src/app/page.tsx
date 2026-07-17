@@ -2,6 +2,14 @@ import Hero from "@/components/home/Hero";
 import SportCard from "@/components/home/SportCard";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight, Trophy, Shield, Crown } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "The Royal Sports Club | Borderless Digital Sanctuary",
+  description: "Request an invitation to the world's most exclusive digital society. Connect with high-net-worth individuals over a shared passion for historic, aristocratic sports.",
+  keywords: ["HNWI", "private digital club", "luxury sports", "aristocratic heritage", "global elite networking", "wealth lifestyle"],
+};
 
 export default function Home() {
   return (

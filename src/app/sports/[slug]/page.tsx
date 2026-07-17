@@ -10,12 +10,12 @@ import FaqAccordion from "@/components/ui/FaqAccordion";
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const sport = sportsData[slug];
-  
   if (!sport) return {};
   
   return {
     title: sport.name,
     description: sport.intro,
+    keywords: [sport.name, "elite sports", "aristocratic traditions", sport.name + " history", sport.name + " rules"],
     openGraph: {
       title: `${sport.name} | The Royal Sports Club`,
       description: sport.intro,

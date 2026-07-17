@@ -1,4 +1,11 @@
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About The Society | Heritage & Exclusivity",
+  description: "Learn about the core values of The Royal Sports Club: Curated Knowledge, an Invite-Only Network, and Absolute Digital Exclusivity for global leaders.",
+  keywords: ["elite society values", "private networking club", "invite-only community", "high society digital sanctuary", "aristocratic traditions"],
+};
 
 const aboutFaqs = [
   { question: "How does one join the community?", answer: "Membership is strictly invite-only. Prospective members must be nominated by a current peer within our private network and pass a rigorous vetting process ensuring alignment with our core values." },

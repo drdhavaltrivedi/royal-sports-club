@@ -1,5 +1,12 @@
 import SportCard from "@/components/home/SportCard";
 import { sportsData } from "@/data/sports";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "The Sports | Aristocratic Heritage & Knowledge",
+  description: "Explore our meticulously curated digital archives covering the history, etiquette, and strategy of the world's most prestigious elite sports.",
+  keywords: ["luxury sports history", "polo rules", "golf networking", "lawn tennis etiquette", "aristocratic games", "elite sports knowledge"],
+};
 
 export default function SportsIndexPage() {
   const sports = Object.values(sportsData);

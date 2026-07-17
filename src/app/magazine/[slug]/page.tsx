@@ -72,6 +72,32 @@ const getArticleData = (slug: string) => {
   return articles[slug] || null;
 };
 
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getArticleData(slug);
+  if (!article) return {};
+
+  return {
+    title: article.title,
+    description: article.content[0],
+    keywords: [article.category, "HNWI lifestyle", "luxury editorial", "high society"],
+    openGraph: {
+      title: article.title,
+      description: article.content[0],
+      images: [{ url: article.image, width: 1200, height: 630, alt: article.title }],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.content[0],
+      images: [article.image],
+    }
+  };
+}
+
 export default async function MagazineArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = getArticleData(slug);

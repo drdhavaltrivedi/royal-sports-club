@@ -1,3 +1,11 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Request an Invitation | Membership",
+  description: "Apply for membership to The Royal Sports Club. Submit your statement of intent or nominate a peer to join our borderless digital sanctuary.",
+  keywords: ["apply for membership", "exclusive club invitation", "private society application", "HNWI networking request"],
+};
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-luxury-background pt-32 pb-24">

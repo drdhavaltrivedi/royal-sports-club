@@ -1,5 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "The Editorial Magazine | Elite Insights",
+  description: "Deeply intellectual, highly researched articles on the culture, economics, and psychology of luxury sports, curated exclusively for high-net-worth individuals.",
+  keywords: ["luxury lifestyle magazine", "HNWI editorial", "aristocratic culture blog", "elite sports economics", "high society reading"],
+};
 
 const ARTICLES = [
   {
