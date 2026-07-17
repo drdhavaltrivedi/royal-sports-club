@@ -53,9 +53,9 @@ export default function Home() {
                 <h2 className="font-serif text-4xl md:text-5xl mb-4">The Editorial</h2>
                 <p className="font-sans text-luxury-secondary/70 text-lg max-w-xl">Curated insights into the luxury lifestyle, historic moments, and the culture of elite sports.</p>
               </div>
-              <button className="mt-8 md:mt-0 px-6 py-3 border border-luxury-accent text-luxury-accent hover:bg-luxury-accent hover:text-white transition-colors tracking-widest uppercase text-sm">
+              <Link href="/magazine" className="mt-8 md:mt-0 inline-block px-6 py-3 border border-luxury-accent text-luxury-accent hover:bg-luxury-accent hover:text-white transition-colors tracking-widest uppercase text-sm">
                 Read All Articles
-              </button>
+              </Link>
            </div>
            
            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -15,6 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://theroyalsportsclub.com"),
   title: {
     template: "%s | The Royal Sports Club",
     default: "The Royal Sports Club | A Premium Luxury Web Experience",
