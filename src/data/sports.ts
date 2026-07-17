@@ -40,8 +40,8 @@ const generateDefaultSport = (name: string, slug: string): SportDetail => ({
   ],
   etiquette: "The highest standards of sportsmanship are expected at all times. This includes unwavering respect for opponents, officials, and the grounds. Unseemly displays of emotion or unsportsmanlike conduct are strictly forbidden.",
   faqs: [
-    { question: `What is the standard dress code for ${name}?`, answer: `The dress code reflects the heritage of ${name}, requiring traditional, elegant sporting attire.` },
-    { question: `Do I need to own my own equipment?`, answer: `While the Club provides standard equipment, most distinguished players prefer to commission bespoke gear tailored to their exact specifications.` }
+    { question: `Why is ${name} considered an elite sport?`, answer: `${name} requires an extraordinary combination of strategic intellect, dedicated training, and significant resources, naturally drawing a demographic of highly driven and successful individuals.` },
+    { question: `What can members learn from the history of ${name}?`, answer: `Our digital archives explore how ${name} evolved from aristocratic pastimes into modern tests of character, teaching profound lessons in discipline and long-term strategy.` }
   ]
 });
 
@@ -73,8 +73,8 @@ export const sportsData: Record<string, SportDetail> = {
     ],
     etiquette: "Golf relies heavily on the honor system. Players must remain completely silent while others are hitting, repair their divots on the fairway and pitch marks on the green, and maintain a brisk pace of play. Dress codes typically require collared shirts and tailored trousers.",
     faqs: [
-      { question: "What is the handicap limit to play at the Royal Estate?", answer: "To maintain the pace and quality of play, guests must possess a certified handicap of 18 or lower." },
-      { question: "Are caddies mandatory?", answer: "Yes, all groups must be accompanied by one of our professional caddies who are experts in reading our greens." }
+      { question: "Why is Golf the ultimate networking sport?", answer: "Golf inherently requires patience, strategic thinking, and emotional control—traits highly valued in global commerce. A four-hour round provides a unique, uninterrupted environment for executives to bond and assess character." },
+      { question: "What historical knowledge does the Society offer on Golf?", answer: "Members have access to our definitive guides detailing the evolution of course architecture, the untold history of St Andrews, and the psychological strategies employed by historical champions." }
     ]
   },
   "polo": {
@@ -104,8 +104,8 @@ export const sportsData: Record<string, SportDetail> = {
     ],
     etiquette: "Polo maintains a highly social and aristocratic culture. The tradition of 'divot stomping' during halftime invites spectators onto the field to replace torn turf while socializing. Elegance in dress is expected from spectators, often featuring summer suits, sundresses, and extravagant hats.",
     faqs: [
-      { question: "Do I need to provide my own Polo ponies?", answer: "Members may board their string in our elite stables, or lease world-class ponies directly from the Club's equestrian center." },
-      { question: "What is 'divot stomping'?", answer: "A traditional halftime activity where spectators are invited onto the field to press down the turf torn up by the horses' hooves, accompanied by champagne." }
+      { question: "Why is Polo called 'The Sport of Kings'?", answer: "Originating as a cavalry training exercise for ancient Persian royalty, Polo has always been synonymous with military elite and aristocracy due to the immense resources required to maintain a string of elite horses." },
+      { question: "How does the Society cover the global Polo circuit?", answer: "Our editorial team provides exclusive coverage and historical context for the world's most prestigious tournaments, from the high-goal season in Wellington to the British open at Cowdray Park." }
     ]
   },
   "lawn-tennis": {
@@ -135,8 +135,8 @@ export const sportsData: Record<string, SportDetail> = {
     ],
     etiquette: "Silence is strictly mandated during points. Players are expected to respect the umpire's decisions without outburst. At exclusive clubs, the 'all-white' clothing rule is not merely a suggestion, but a requirement representing the purity and tradition of the sport.",
     faqs: [
-      { question: "How strict is the all-white clothing rule?", answer: "Absolutely uncompromising. Even slight off-white or cream colors, as well as colored trims exceeding 1 centimeter, are prohibited on our grass courts." },
-      { question: "Can we play on grass year-round?", answer: "Our pristine grass courts are exclusively open during the summer season to preserve their immaculate condition." }
+      { question: "What is the historical significance of the all-white dress code?", answer: "Dating back to the 1800s, white was worn to minimize the visibility of sweat, which was considered unseemly for high society. Today, it stands as a visual testament to the purity, tradition, and strict etiquette of the game." },
+      { question: "Who are the most notable historical patrons of Lawn Tennis?", answer: "Our archives detail the profound influence of British Royalty and European aristocrats who transformed it from a garden party pastime into a globally revered test of physical endurance." }
     ]
   },
   "fencing": {
@@ -166,8 +166,8 @@ export const sportsData: Record<string, SportDetail> = {
     ],
     etiquette: "Fencing is steeped in chivalry. Fencers must salute their opponent, the referee, and the audience with their weapon before putting on their masks. After the final touch, fencers must remove their masks, salute again, and shake hands with their non-weapon hand.",
     faqs: [
-      { question: "Is fencing dangerous?", answer: "Modern fencing is incredibly safe. The weapons are blunted and flexible, and our kevlar-reinforced protective gear prevents injury." },
-      { question: "Do you offer classical fencing or Olympic sport fencing?", answer: "The Club teaches both the classical traditions of the duel and modern, electronically scored Olympic sport fencing." }
+      { question: "How does Fencing relate to modern strategic thinking?", answer: "Often called 'physical chess', Fencing demands split-second decision making, anticipation, and the ability to read an opponent's psychological state—skills directly translatable to high-stakes negotiations." },
+      { question: "What is the difference between classical and sport fencing?", answer: "Our archives deeply explore the martial roots of classical fencing, which treated the bout as a matter of life and death, versus modern Olympic sport fencing which focuses on electronic scoring and extreme athleticism." }
     ]
   },
   "sailing": {
@@ -197,8 +197,8 @@ export const sportsData: Record<string, SportDetail> = {
     ],
     etiquette: "Maritime tradition dictates strict respect for the 'Captain' whose word is absolute law on board. In yacht clubs, a high standard of dress (often navy blazers and white trousers) is expected. Good seamanship requires always offering assistance to any vessel in distress, regardless of the race.",
     faqs: [
-      { question: "Can I moor my yacht at the Club?", answer: "The Club maintains a private deep-water marina exclusively for members' vessels, subject to slip availability." },
-      { question: "Do you offer sailing lessons?", answer: "Yes, our Master Mariners provide private instruction ranging from basic sailing to offshore racing tactics." }
+      { question: "What makes competitive sailing the ultimate test of leadership?", answer: "Offshore sailing and yacht racing require absolute synchronization of a crew under extreme, unpredictable environmental pressure, making it a pure crucible for leadership and crisis management." },
+      { question: "How does the Society cover maritime heritage?", answer: "Members gain access to comprehensive histories of the world's oldest yacht clubs, the evolution of hull design, and the legendary billionaire syndicates behind the America's Cup." }
     ]
   }
 };
