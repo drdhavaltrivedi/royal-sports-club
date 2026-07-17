@@ -7,40 +7,52 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 // Mock data for the magazine articles
 const getArticleData = (slug: string) => {
   const articles: Record<string, any> = {
-    "evolution-of-lawn-tennis": {
-      title: "The Evolution of Lawn Tennis at Wimbledon",
+    "architectural-genius-st-andrews": {
+      title: "The Architectural Genius of St Andrews: A Study in Strategic Patience",
       category: "Heritage",
-      author: "Edward Harrington",
+      author: "Alistair Sterling",
       date: "July 12, 2026",
-      image: "/images/vintage-tennis.png",
+      image: "/images/magazine-golf.png",
       content: [
-        "Discover how a Victorian garden party pastime transformed into the world's most prestigious sporting tournament while fiercely protecting its traditions.",
-        "The All England Croquet Club was founded in 1868, but it wasn't until 1877 that the first Lawn Tennis Championship was held. Since then, the pristine grass courts have witnessed the evolution of a sport that marries grace with immense physical power.",
-        "Despite the passage of time and the modernization of the game, Wimbledon has stubbornly, and beautifully, held onto its roots. The strict all-white dress code, the lack of sponsor advertising around the courts, and the royal patronage all contribute to an atmosphere that feels entirely separate from the commercialized modern world."
+        "Discover how the natural contours of the Scottish coastline created the most formidable test of strategic intellect in the sporting world.",
+        "Unlike modern courses sculpted by bulldozers and corporate committees, the Old Course at St Andrews was carved by centuries of wind, rain, and the subtle grazing of sheep. The resulting architecture is a masterclass in risk-reward strategy, forcing the player to constantly calculate probability against ambition.",
+        "For the high-net-worth individual, playing St Andrews is less about physical prowess and entirely about emotional regulation. The hidden pot bunkers and double greens do not punish physical errors; they punish impatience. It is the ultimate crucible for the modern leader."
       ]
     },
-    "golf-sport-of-business": {
-      title: "Why Golf Became the Sport of Business Leaders",
-      category: "Lifestyle",
-      author: "Victoria Sterling",
+    "polo-and-the-art-of-war": {
+      title: "Polo and the Art of War: What Business Leaders Learn from the Pitch",
+      category: "Strategy",
+      author: "Eleanor Vance",
       date: "August 5, 2026",
-      image: "/images/golf.png",
+      image: "/images/magazine-polo.png",
       content: [
-        "The undeniable connection between the fairway and the boardroom, and why the most important deals are still struck on the 18th hole.",
-        "Golf requires patience, strategy, and emotional control—traits highly valued in the corporate world. A four-hour round provides a unique environment for executives to bond, assess character, and build trust away from the pressures of the office.",
-        "Historically, country clubs served as the epicenters of local commerce and networking. Today, while business has gone global, the tradition of cementing a partnership over a meticulously manicured 18-hole course remains a hallmark of corporate luxury."
+        "The undeniable connection between a 6th-century Persian cavalry training exercise and the highest echelons of modern corporate strategy.",
+        "Polo is unique among sports in that the human athlete is entirely dependent on the physical superiority and synchronization of their 'string' of ponies. A match is not won purely by the swing of the mallet, but by the strategic deployment of equine assets throughout the six chukkas, holding the best horses in reserve for the final, decisive moments.",
+        "This resource-management paradigm translates perfectly to global enterprise. The modern CEO, like the high-goal Polo patron, must orchestrate highly volatile, powerful assets in a chaotic, high-speed environment where hesitation results in immediate defeat."
       ]
     },
-    "exclusive-sporting-clubs": {
-      title: "The World's Most Exclusive Sporting Clubs",
+    "psychology-of-white-wimbledon": {
+      title: "The Psychology of White: Decoding Wimbledon's Uncompromising Etiquette",
       category: "Culture",
       author: "Charles Montgomery",
       date: "September 18, 2026",
-      image: "/images/clubhouse.png",
+      image: "/images/magazine-tennis.png",
       content: [
-        "A rare glimpse inside the private sanctuaries where royalty, celebrities, and billionaires gather to celebrate their sporting passions.",
-        "Beyond the iron gates and long driveways lie institutions where membership cannot simply be bought—it must be earned or inherited. Clubs like Augusta National or the Royal Yacht Squadron have admission criteria that are notoriously opaque, creating an aura of supreme exclusivity.",
-        "Inside, the dark mahogany panels and leather armchairs have absorbed the whispers of world leaders and titans of industry. These clubs offer more than just world-class sporting facilities; they offer a timeless sanctuary from the public eye."
+        "A rare glimpse into the sociological and psychological power of strict dress codes in an era of absolute casualness.",
+        "At the All England Club, the 'predominantly white' rule is not merely an aesthetic preference; it is a profound psychological equalizer. By stripping away neon logos, personal branding, and flamboyant expression, the Club forces the athlete—and the spectator—to focus entirely on the purity of the physical contest.",
+        "In the modern era, where attention is the ultimate currency and personal branding is ubiquitous, Wimbledon's refusal to compromise its visual heritage is the ultimate luxury. True exclusivity is the power to enforce tradition in defiance of commercial trends."
+      ]
+    },
+    "billionaire-syndicates-americas-cup": {
+      title: "Wind and Wealth: The Billionaire Syndicates Behind the America's Cup",
+      category: "Innovation",
+      author: "Victoria Kensington",
+      date: "October 2, 2026",
+      image: "/images/yachting.png",
+      content: [
+        "How the oldest international sporting trophy became the world's most expensive and secretive technological arms race.",
+        "The America's Cup is no longer merely a sailing regatta; it is a proxy war fought by the world's wealthiest individuals using aerospace engineering, fluid dynamics, and carbon-fiber hydrofoils. Syndicates routinely spend upwards of $100 million for a single campaign.",
+        "For the elite patrons backing these vessels, the Cup represents the ultimate test of organizational leadership. It requires assembling a team of world-class engineers, software developers, and tactical sailors, and seamlessly integrating them into a singular, hyper-efficient unit operating on the bleeding edge of physics."
       ]
     }
   };

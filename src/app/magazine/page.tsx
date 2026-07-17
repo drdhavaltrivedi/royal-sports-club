@@ -3,32 +3,32 @@ import Image from "next/image";
 
 const ARTICLES = [
   {
-    slug: "evolution-of-lawn-tennis",
+    slug: "architectural-genius-st-andrews",
     category: "Heritage",
-    title: "The Evolution of Lawn Tennis at Wimbledon",
-    desc: "Discover how a Victorian garden party pastime transformed into the world's most prestigious sporting tournament.",
-    image: "/images/vintage-tennis.png"
+    title: "The Architectural Genius of St Andrews: A Study in Strategic Patience",
+    desc: "Discover how the natural contours of the Scottish coastline created the most formidable test of strategic intellect.",
+    image: "/images/magazine-golf.png"
   },
   {
-    slug: "golf-sport-of-business",
-    category: "Lifestyle",
-    title: "Why Golf Became the Sport of Business Leaders",
-    desc: "The undeniable connection between the fairway and the boardroom, and why deals are still struck on the 18th hole.",
-    image: "/images/golf.png"
+    slug: "polo-and-the-art-of-war",
+    category: "Strategy",
+    title: "Polo and the Art of War: What Business Leaders Learn from the Pitch",
+    desc: "The undeniable connection between a 6th-century Persian cavalry training exercise and modern corporate strategy.",
+    image: "/images/magazine-polo.png"
   },
   {
-    slug: "exclusive-sporting-clubs",
+    slug: "psychology-of-white-wimbledon",
     category: "Culture",
-    title: "The World's Most Exclusive Sporting Clubs",
-    desc: "A rare glimpse inside the private sanctuaries where royalty, celebrities, and billionaires gather to celebrate.",
-    image: "/images/clubhouse.png"
+    title: "The Psychology of White: Decoding Wimbledon's Uncompromising Etiquette",
+    desc: "A rare glimpse into the sociological power of strict dress codes in an era of absolute casualness.",
+    image: "/images/magazine-tennis.png"
   },
   {
-    slug: "polo-sport-of-kings",
-    category: "Equestrian",
-    title: "Polo: The Sport of Kings and Aristocrats",
-    desc: "An inside look at the high-society culture surrounding this majestic game of speed and strategy.",
-    image: "/images/polo.png"
+    slug: "billionaire-syndicates-americas-cup",
+    category: "Innovation",
+    title: "Wind and Wealth: The Billionaire Syndicates Behind the America's Cup",
+    desc: "How the oldest international sporting trophy became the world's most expensive and secretive technological arms race.",
+    image: "/images/yachting.png"
   }
 ];
 
